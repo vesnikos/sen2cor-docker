@@ -12,6 +12,7 @@ tar -xzvf /tmp/sen2cor-2.3.1.tar.gz && \
 cd /sen2cor-2.3.1 && \
 /bin/echo -e "y\ny\ny\n" | python setup.py install 
 
+RUN conda install numpy==1.11.3
 # Cleanup
 RUN rm -rf /tmp/*
 
